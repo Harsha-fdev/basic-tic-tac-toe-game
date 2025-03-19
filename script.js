@@ -38,7 +38,7 @@ const checkWin = ()=>{
 
 //game logic
 let Boxes = document.getElementsByClassName("box");
-Array.from(Boxes).forEach(element => {//from converts html collections into array so that froeach can traverse
+Array.from(Boxes).forEach(element => {//Array.from converts html collections into array so that froeach can traverse
     let boxtext = element.querySelector('.boxtext');//not document.querySelector
     element.addEventListener('click' , ()=>{
         if(boxtext.innerText == ""){
